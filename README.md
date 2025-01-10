@@ -39,6 +39,7 @@ To start using the CrewAI Stock Analysis project, follow these steps:
    BROWSERLESS_API_KEY=your_browserless_api_key
    SERPER_API_KEY=your_serper_api_key
    SEC_API_API_KEY=your_sec_api_key
+   OPENAI_API_KEY=your_openai_api_key
    ```
 
 4. **Run the Application**: Execute the `main.py` script to start the stock analysis process.
