@@ -23,7 +23,7 @@ To start using the CrewAI Stock Analysis project, follow these steps:
 1. **Clone the Repository**: First, clone the project repository to your local machine.
 
    ```bash
-   git clone 
+   git clone https://github.com/thewilddoor/Multi-Agent_AI-Stock-Analyze.git
    cd crewai_stock_analysis
    ```
 
