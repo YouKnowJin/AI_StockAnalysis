@@ -16,6 +16,8 @@ The CrewAI Stock Analysis project is built using a modular architecture with sev
 
 5. **Environment Variables**: The project uses environment variables to manage API keys and other sensitive information, loaded via `dotenv`.
 
+![Alt Text](mermaid-en.png)
+
 ### 🚀 Getting Started
 
 To start using the CrewAI Stock Analysis project, follow these steps:
