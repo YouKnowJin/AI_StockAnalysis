@@ -2,7 +2,7 @@
 
 import json
 import yfinance as yf
-from crewai_stock_analysis.tools.crewai_tools import Tool, tool
+from tools.crewai_tools import Tool, tool
 
 def value_to_crores(value: int) -> float:
     """将数值转换为亿单位。

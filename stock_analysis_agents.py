@@ -1,6 +1,6 @@
 from crewai import Agent
-from crewai_stock_analysis.tools.YFinanceTools import YFinanceTools
-from crewai_stock_analysis.tools.crewai_tools import Tool
+from tools.YFinanceTools import YFinanceTools
+from tools.crewai_tools import Tool
 from tools.browser_tools import BrowserTools
 from tools.calculator_tools import CalculatorTools
 from tools.search_tools import SearchTools
@@ -24,7 +24,7 @@ class StockAnalysisAgents:
             role="股票新闻分析师",
             goal="为指定股票生成详细的研究分析报告。",
             tools=[
-                BrowserTools.scrape_and_summarize_website,
+                # BrowserTools.scrape_and_summarize_website,
                 SearchTools.search_news,
                 SearchTools.search_internet,
                 self.yf_tools.get_company_news
@@ -49,7 +49,7 @@ class StockAnalysisAgents:
             role="财务数据分析师",
             goal="分析指定公司的财务指标并生成报告。",
             tools=[
-                BrowserTools.scrape_and_summarize_website,
+                # BrowserTools.scrape_and_summarize_website,
                 CalculatorTools.calculate,
                 SearchTools.search_news,
                 SearchTools.search_internet,
@@ -81,7 +81,7 @@ class StockAnalysisAgents:
             role="投资顾问",
             goal="整合所有分析结果，生成专业的投资建议报告。",
             tools=[
-                BrowserTools.scrape_and_summarize_website,
+                # BrowserTools.scrape_and_summarize_website,
                 CalculatorTools.calculate,
                 SearchTools.search_news,
                 SearchTools.search_internet,
